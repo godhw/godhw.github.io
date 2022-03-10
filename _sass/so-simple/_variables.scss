@@ -38,13 +38,16 @@ $h6-min: ($base-font-size / $modular-scale-1) !default;
 $h6-max: ($base-font-size / $modular-scale-2) !default;
 
 /* Font Families */
+$noto-sans-font-family: "Noto Sans KR", sans-serif !default;  // korean
 $serif-font-family: "Lora", serif !default;
-$sans-serif-font-family: "Source Sans Pro", sans-serif !default;
+$sans-serif-font-family: "Source Sans Pro", -apple-system, "Nanum Gothic", sans-serif !default;
 $monospace-font-family: Menlo, Consolas, Monaco, "Courier New", Courier, monospace !default;
 
 $base-font-family: $sans-serif-font-family !default;
-$headline-font-family: $sans-serif-font-family !default;
-$title-font-family: $serif-font-family !default;
+$headline-font-family: $noto-sans-font-family !default;
+// $headline-font-family: $sans-serif-font-family !default;
+$title-font-family: $noto-sans-font-family !default;
+// $title-font-family: $serif-font-family !default;
 $description-font-family: $serif-font-family !default;
 $meta-font-family: $serif-font-family !default;
 

@@ -272,7 +272,11 @@
       margin: 0;
     }
   }
-
+// get from https://github.com/olvimama/olvimama.github.io/commit/36837450b9c6ae806d4f29b50b22cef298986a45
+span.comment {
+  color:#999999;
+  font-size: 0.8rem;
+}
   .page-share {
     // display: grid fallback
     clear: both;
