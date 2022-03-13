@@ -6,7 +6,7 @@ tags:
   - database
   - lacture
   - computer science
-last_modified_at: 2022-02-24T00:00:00 +09:00
+last_modified_at: 2022-03-13T22:00:00 +09:00
 ---
 Let`s talk about disk space manager.
 {: .notice--accent}
@@ -87,7 +87,7 @@ It is necessary to divide one file into multiple pages. This process is called *
 **Read and Write calls are really slow!!**  
 other APIs are logically used, but they are **also slow** because they require modification of `header_page`. 
 
-DSM API
+Disk Manager API
 ```c
 void file_read_page(table_id, page_id, *dest);
 void file_write_page(table_id, page_id, *src);
@@ -95,3 +95,15 @@ void file_alloc_page();
 void file_free_page(table_id, page_id);
 ```
 
+In order to effectively use the OS's file system, **file descriptor** is used.<br>
+Also, need to utilize the system call.<br>
+If you google it, you can immediately find out what header files and functions you need.
+{: .notice--warning}
+
+Commonly used functions are `open()`, `close()`, etc.. <span class="comment">not `fopen()`, `fclose()`!!!</span>
+Also, because of the characteristics of db, `write()` function must be called and `fsync()` function must also be called. The `fsync()` function causes the OS to flush the data left in the kernel buffer to disk.
+
+# Relative Post
+1. [[DataBase Systems] introduction]({% post_url 2022-01-25-post-database_0 %})
+2. This post!
+3. Add more...

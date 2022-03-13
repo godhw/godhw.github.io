@@ -49,4 +49,9 @@ I will provide simple codes used in the project of the course I took. Although i
 In the next post, I will explain the basics of layered architecture and disk space management.
 ![center-aligned-image](/images/database/2022-01-31-layered_architecture.png){: .align-center}
 
+# Relative Post
+1. This post!
+2. [[DataBase Systems] Disk Space Management]({% post_url 2022-02-24-post-database_1 %})
+3. Add more...
+
 
