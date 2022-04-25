@@ -6,7 +6,7 @@ tags:
   - sml
   - lacture
   - computer science
-last_modified_at: 2022-04-25T00:00:00 +09:00
+last_modified_at: 2022-04-25T10:00:00 +09:00
 ---
 Let`s talk about SML, functional programming
 {: .notice--accent}
